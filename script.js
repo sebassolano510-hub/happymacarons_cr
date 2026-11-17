@@ -114,16 +114,18 @@ $("#order-form").addEventListener("submit", e => {
   const lista = SABORES.filter(s => cantidades[s.id] > 0).map(s => `• ${cantidades[s.id]} ${s.nombre}`).join("\n");
   const comentarios = f.get("comentarios").trim();
   const texto =
-    `Hola Happy Macarons 💕\nQuiero hacer un pedido:\n\n` +
-    `*Caja de ${tamano}*\n${lista}\n\n` +
-    `👤 *Nombre:* ${f.get("nombre").trim()}\n` +
-    `📅 *Entrega:* ${dia} ${d}/${m}/${y}\n` +
-    `📍 *Lugar:* ${f.get("lugar").trim()}\n` +
-    (comentarios ? `📝 *Comentarios:* ${comentarios}\n` : "") +
+    `Hola Happy Macarons 💕\n` +
+    `Quiero hacer un pedido:\n\n` +
+    `Caja de ${tamano}\n${lista}\n\n` +
+    `👤 Nombre: ${f.get("nombre").trim()}\n` +
+    `📅 Entrega: ${dia} ${d}/${m}/${y}\n` +
+    `📍 Lugar: ${f.get("lugar").trim()}\n` +
+    (comentarios ? `📝 Comentarios: ${comentarios}\n` : "") +
     `\nCaja: ${colones(PRECIOS[tamano])}\n` +
     `Entrega GAM: ${colones(ENTREGA)}\n` +
-    `*Total: ${colones(PRECIOS[tamano] + ENTREGA)}*`;
-  window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(texto)}`, "_blank");
+    `Total: ${colones(PRECIOS[tamano] + ENTREGA)}`;
+  // api.whatsapp.com directo: wa.me redirige y en algunos equipos daña los emojis
+  window.open(`https://api.whatsapp.com/send?phone=${WHATSAPP}&text=${encodeURIComponent(texto)}`, "_blank");
 });
 
 actualizar();
