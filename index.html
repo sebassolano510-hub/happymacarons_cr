@@ -1,1 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Macarons | Macarons artesanales en Costa Rica</title>
+  <meta name="description" content="Happy Macarons: macarons artesanales de Crème Brûlée, Pie de Limón, Red Velvet y Chocolate. Cajas de 4, 6 y 8. Entregas por encargo en la GAM.">
+  <meta property="og:title" content="Happy Macarons">
+  <meta property="og:description" content="Macarons artesanales. Cajas de 4, 6 y 8 con entrega en la GAM.">
+  <meta property="og:image" content="img/logo.jpg">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- ===== Navegación ===== -->
+  <header class="nav">
+    <a href="#inicio" class="brand">
+      <img src="img/mascota.png" alt="" width="40" height="44">
+      <span><b>HAPPY</b> Macarons</span>
+    </a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="nav-links">
+      <a href="#sabores">Sabores</a>
+      <a href="#cajas">Cajas</a>
+      <a href="#entregas">Entregas</a>
+      <a href="#pedido" class="btn btn-small">Pedir</a>
+    </nav>
+  </header>
+
+  <!-- ===== Portada ===== -->
+  <section id="inicio" class="hero">
+    <div class="hero-text">
+      <h1 class="logo-type">
+        <span class="happy">HAPPY</span>
+        <span class="macarons">Macarons</span>
+      </h1>
+      <p class="lead">Macarons artesanales hechos con cariño, para regalar o para darse un gustito.</p>
+      <div class="hero-actions">
+        <a href="#pedido" class="btn">Armar mi caja</a>
+        <a href="#sabores" class="btn btn-ghost">Ver sabores</a>
+      </div>
+      <p class="hero-note">🚚 Entregas por encargo en toda la GAM</p>
+    </div>
+    <div class="hero-art">
+      <img src="img/mascota.png" alt="Mascota de Happy Macarons: un macaron rosado caminando y haciendo el símbolo de paz" class="mascot">
+    </div>
+  </section>
+
+  <!-- ===== Banda de fotos ===== -->
+  <div class="strip">
+    <img src="img/sabores.jpg" alt="Macarons de Red Velvet, Crème Brûlée y Pie de Limón" loading="lazy">
+  </div>
+
+  <!-- ===== Sabores ===== -->
+  <section id="sabores" class="section">
+    <h2>Nuestros sabores</h2>
+    <p class="section-sub">Combínelos como quiera en su caja.</p>
+    <div class="flavors">
+      <article class="flavor">
+        <img src="img/creme-brulee.jpg" alt="Macarons de Crème Brûlée" loading="lazy">
+        <div class="flavor-body">
+          <h3>Crème Brûlée</h3>
+          <p>Tapa de azúcar caramelizada y un relleno cremoso de vainilla.</p>
+        </div>
+      </article>
+      <article class="flavor">
+        <img src="img/pie-de-limon.jpg" alt="Macarons de Pie de Limón" loading="lazy">
+        <div class="flavor-body">
+          <h3>Pie de Limón</h3>
+          <p>Crema de limón con galleta triturada por encima, como el pie de siempre.</p>
+        </div>
+      </article>
+      <article class="flavor">
+        <img src="img/red-velvet.jpg" alt="Macarons de Red Velvet" loading="lazy">
+        <div class="flavor-body">
+          <h3>Red Velvet</h3>
+          <p>Relleno de queso crema con migas de bizcocho red velvet.</p>
+        </div>
+      </article>
+      <article class="flavor">
+        <img src="img/chocolate-card.jpg" alt="Macarons de Chocolate" loading="lazy">
+        <div class="flavor-body">
+          <h3>Chocolate</h3>
+          <p>Ganache de chocolate cremosa, para los chocolateros de corazón.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Cajas ===== -->
+  <section id="cajas" class="section gingham">
+    <div class="card-panel">
+      <h2>Cajas</h2>
+      <p class="section-sub">Elija el tamaño y los sabores que quiera.</p>
+      <div class="boxes">
+        <button class="box" data-size="4">
+          <span class="box-n">4</span>
+          <span class="box-label">macarons</span>
+          <span class="price">₡3.900</span>
+        </button>
+        <button class="box box-featured" data-size="6">
+          <span class="tag">Favorita</span>
+          <span class="box-n">6</span>
+          <span class="box-label">macarons</span>
+          <span class="price">₡5.800</span>
+        </button>
+        <button class="box" data-size="8">
+          <span class="box-n">8</span>
+          <span class="box-label">macarons</span>
+          <span class="price">₡7.600</span>
+        </button>
+      </div>
+      <img src="img/cajas.jpg" alt="Cajas de 4, 6 y 8 macarons de Happy Macarons" class="boxes-photo" loading="lazy">
+    </div>
+  </section>
+
+  <!-- ===== Entregas ===== -->
+  <section id="entregas" class="section">
+    <h2>¿Cómo funciona?</h2>
+    <div class="steps">
+      <div class="step"><span>1</span><h3>Arme su caja</h3><p>Elija el tamaño y combine los sabores.</p></div>
+      <div class="step"><span>2</span><h3>Envíe el pedido</h3><p>Se abre WhatsApp con todo listo para enviar.</p></div>
+      <div class="step"><span>3</span><h3>Lo recibe</h3><p>Entregamos por encargo en la GAM por ₡1.500 adicionales.</p></div>
+    </div>
+  </section>
+
+  <!-- ===== Pedido ===== -->
+  <section id="pedido" class="section section-tint">
+    <h2>Arme su caja</h2>
+    <p class="section-sub">Escoja el tamaño y reparta los sabores.</p>
+
+    <form id="order-form" class="order" novalidate>
+      <fieldset class="size-picker">
+        <legend>1. Tamaño de la caja</legend>
+        <label><input type="radio" name="size" value="4"><span>4 · ₡3.900</span></label>
+        <label><input type="radio" name="size" value="6" checked><span>6 · ₡5.800</span></label>
+        <label><input type="radio" name="size" value="8"><span>8 · ₡7.600</span></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Sabores <span id="count" class="count">0 / 6</span></legend>
+        <div class="progress"><div id="progress-bar"></div></div>
+        <div id="flavor-pickers" class="pickers"></div>
+        <button type="button" id="mix" class="link-btn">Llenar con mezcla variada</button>
+      </fieldset>
+
+      <fieldset class="details">
+        <legend>3. Sus datos</legend>
+        <label>Nombre<input type="text" name="nombre" required placeholder="Su nombre"></label>
+        <label>Fecha de entrega<input type="date" name="fecha" required></label>
+        <label class="full">Lugar de entrega (GAM)<input type="text" name="lugar" required placeholder="Ej: Heredia centro, frente al parque"></label>
+        <label class="full">Comentarios<textarea name="comentarios" rows="2" placeholder="Es un regalo, dedicatoria, hora preferida…"></textarea></label>
+      </fieldset>
+
+      <div class="summary">
+        <div><span>Caja</span><b id="sum-box">₡5.800</b></div>
+        <div><span>Entrega GAM</span><b>₡1.500</b></div>
+        <div class="total"><span>Total</span><b id="sum-total">₡7.300</b></div>
+      </div>
+
+      <p id="form-msg" class="form-msg" role="alert"></p>
+      <button type="submit" class="btn btn-wa">Enviar pedido por WhatsApp</button>
+    </form>
+  </section>
+
+  <!-- ===== Pie ===== -->
+  <footer class="footer">
+    <img src="img/mascota.png" alt="" width="70">
+    <p class="logo-type small-logo"><span class="happy">HAPPY</span> <span class="macarons">Macarons</span></p>
+    <p class="social">
+      <a href="https://www.instagram.com/happymacarons_cr" target="_blank" rel="noopener">Instagram @happymacarons_cr</a>
+      <a href="https://wa.me/50687558620" target="_blank" rel="noopener">WhatsApp 8755 8620</a>
+    </p>
+    <p class="small">© <span id="year"></span> Happy Macarons · Costa Rica</p>
+  </footer>
+
+  <a href="https://wa.me/50687558620" class="wa-float" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff" aria-hidden="true"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.4.7 4.7 1.9 6.7L3 29l6.9-2.1c1.9 1 4 1.6 6.1 1.6 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.2c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.2 1.3-4-.3-.4c-1.1-1.7-1.7-3.7-1.7-5.7C5.4 9.8 10.1 5.1 16 5.1s10.6 4.7 10.6 10.5S21.8 26.2 16 26.2zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.7-.5z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
